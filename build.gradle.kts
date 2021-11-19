@@ -21,8 +21,9 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     runtimeOnly("io.micrometer:micrometer-registry-prometheus")
-    runtimeOnly("org.postgresql:postgresql")
+    runtimeOnly("com.h2database:h2")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

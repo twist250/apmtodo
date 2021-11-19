@@ -20,7 +20,7 @@
 
 # TODO
 
-- [ ] Complete TODO API
+- [x] Complete TODO API
 - [ ] Setup docker environment for the API
 - [ ] Setup logs by providing log4j.xml file
 - [ ] Setup ELK(Elasticsearch, Logstash and Kibana) stack for the logs
