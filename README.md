@@ -21,7 +21,6 @@
 # TODO
 
 - [x] Complete TODO API
-- [ ] Setup docker environment for the API
 - [ ] Setup logs by providing log4j.xml file
 - [ ] Setup ELK(Elasticsearch, Logstash and Kibana) stack for the logs
 - [ ] Setup Prometheus and Spring Actuator for APM
