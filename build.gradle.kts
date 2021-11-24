@@ -23,6 +23,8 @@ dependencies {
     runtimeOnly("io.micrometer:micrometer-registry-prometheus")
     runtimeOnly("com.h2database:h2")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("ch.qos.logback.contrib:logback-jackson:0.1.5")
+    implementation("ch.qos.logback.contrib:logback-json-classic:0.1.5")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

@@ -21,7 +21,7 @@
 # TODO
 
 - [x] Complete TODO API
-- [ ] Setup logs by providing log4j.xml file
+- [x] Setup logs by providing logback.xml file 👉 [read more](logs)
 - [ ] Setup ELK(Elasticsearch, Logstash and Kibana) stack for the logs
 - [ ] Setup Prometheus and Spring Actuator for APM
 - [ ] Connect Prometheus to Kibana for APM
