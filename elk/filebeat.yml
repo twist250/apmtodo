@@ -1,0 +1,24 @@
+filebeat.inputs:
+  - type: log
+    paths:
+      - /var/log/app.log
+    json.keys_under_root: true
+    json.overwrite_keys: true
+    json.add_error_key: true
+
+    json.expand_keys: true
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+processors:
+  - add_cloud_metadata: ~
+
+output.elasticsearch:
+  hosts: '${ELASTICSEARCH_HOST:es01:9200}'
+  indices:
+    - index: "todo-%{[agent.version]}-%{+yyyy.MM.dd}"
+
+logging.level: info
+logging.to_stderr: true
